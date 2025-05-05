@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wander Way</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .dropdown-menu {
+          width: 100%;
+        }
+      </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-teal" style="background-color: #00796b;">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-bus-front"></i> Wander Way</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="routes.html">Route</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero" style="background-image: url(images/herosection/14.jpg);">
+        <div class="container text-center" >
+            <h1>Welcome to Wander Way</h1>
+            <p>Discover your next journey with us.</p>
+        </div>
+    </div>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do">
+        <div class="container">
+            <h2 class="text-center mb-4">What we do</h2>
+            <div class="content">
+                <img src="images/whatwedo/10.jpg" alt="Placeholder Image">
+                <div class="text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec justo viverra, tempus elit id, tincidunt lorem. Proin suscipit lorem nec ligula vestibulum facilisis.</p>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Route Section -->
+    <section class="route-section">
+        <h2>Your route</h2>
+        <div class="container mt-5">
+            <form class="d-flex flex-column align-items-center">
+                <h5 class="text-center">From</h5>
+                <div class="input-group mb-3 w-50">
+                    <input type="text" class="form-control" id="from" placeholder="Select Destination" readonly aria-label="Select starting destination" aria-describedby="dropdownMenuButton">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton">
+                      
+                    </ul>
+                  </div>
+                  <h5 class="text-center">To</h5>
+                  <div class="input-group mb-3 w-50">
+                    <input type="text" class="form-control" id="to" placeholder="Select Destination" readonly aria-label="Select ending destination" aria-describedby="dropdownMenuButton2">
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton2">
+                    </ul>
+                  </div>
+          
+              <button type="submit" class="btn btn-primary mt-3">Submit</button>
+            </form>
+          </div>
+    </section>
+
+    <!-- Goal Section -->
+    <section class="goal-section">
+        <h2>Our Goal</h2>
+        <div class="content">
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec justo viverra, tempus elit id, tincidunt lorem. Proin suscipit lorem nec ligula vestibulum facilisis.</p>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+            </div>
+            <img src="images/footer/1.jpg" alt="Placeholder Image">
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/homeform.js"></script>
+    <script src="js/destinations.js"></script>
+</body>
+</html>
