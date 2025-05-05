@@ -1,0 +1,54 @@
+
+{% comment %} {{routes}} {% endcomment %}
+{% for route in routes %}
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="bus-card">
+                <div class="bus-header">
+                    <div>
+                        <span class="bus-category">{{route.first_bus.category}}</span>
+                        <div class="status online">{{route.first_bus.online_avilable}}</div>
+                    </div>
+                    <div class="icon-circle">
+                        🚍
+                    </div>
+                </div>
+
+                <div class="progress mt-2">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+
+                <div class="bus-info mt-3">
+                    <div>
+                        <span>Initial</span>
+                        <br>
+                        <small>{{route.first_bus.startdestination.name}}</small>
+                    </div>
+                    <div>
+                    <span>Change</span>
+                        <br>
+                        <small>{{route.first_bus.finaldestination.name}}</small>
+                    </div>
+                    <div>
+                        <span>Final</span>
+                        <br>
+                        <small>{{route.second_bus.finaldestination.name}}</small>
+                    </div>
+                </div>
+
+                <div class="bus-info mt-2">
+                    <div>
+                        <span>Start Time:{{route.first_bus.start_time}}</span>
+                    </div>
+                    <div>
+                        <span>Arrival:{{route.second_bus.start_time}}</span>
+                    </div>
+                </div>
+                
+
+                <div class="text-end mt-3">
+                    <button class="detail-btn" data-id="{{route.first_bus.id}}">Details</button>
+                </div>
+            </div>
+        </div>
+
+{% endfor %}

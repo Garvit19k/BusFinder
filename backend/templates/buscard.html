@@ -1,0 +1,45 @@
+{% for bus in buses %}
+<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="bus-card">
+                <div class="bus-header">
+                    <div>
+                        <span class="bus-category">{{bus.category}}</span>
+                        <div class="status online">{{bus.online_avilable}}</div>
+                    </div>
+                    <div class="icon-circle">
+                        🚍
+                    </div>
+                </div>
+
+                <div class="progress mt-2">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+
+                <div class="bus-info mt-3">
+                    <div>
+                        <span>Start</span>
+                        <br>
+                        <small>{{bus.startdestination}}</small>
+                    </div>
+                    <div>
+                        <span>Final</span>
+                        <br>
+                        <small>{{bus.finaldestination}}</small>
+                    </div>
+                </div>
+
+                <div class="bus-info mt-2">
+                    <div>
+                        <span>{{bus.start_time}}</span>
+                    </div>
+                    <div>
+                        <span>{{bus.start_time}}</span>
+                    </div>
+                </div>
+
+                <div class="text-end mt-3">
+                    <button class="detail-btn" data-id="{{bus.id}}">Details</button>
+                </div>
+            </div>
+        </div>
+{% endfor %}
